@@ -11,5 +11,16 @@ public class Prueba_Java {
 		System.out.println(numeros.toString());
 		Collections.sort(numeros);		//MergeSort
 		System.out.println(numeros.toString());
+
+		ArrayList<String> nombres = new ArrayList<>();
+		nombres.add("Luke");
+		nombres.add("Leia");
+		nombres.add("Anakyn");
+		nombres.add("Obi-> Wan kenobi");
+		
+		ArrayList<String> copiaNombres = (ArrayList<String>) nombres.clone();
+		System.out.println(nombres.toString());
+		Collections.sort(nombres);
+		System.out.println(nombres.toString());
 	}
 }
