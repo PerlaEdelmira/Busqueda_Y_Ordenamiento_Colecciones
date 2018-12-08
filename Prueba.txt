@@ -49,6 +49,12 @@ public class Prueba_Java {
 				return edad.compareTo(arg0.edad);
 			}
 		}//class Alumno
+
+		Alumno a1 = new Alumno("17", 20);
+		Alumno a2 = new Alumno("1", 1);
+		Alumno a3 = new Alumno("7", 56);
+		Alumno a4 = new Alumno("878", 30);
+		Alumno a5 = new Alumno("3", 7);
 		
 	}
 }
