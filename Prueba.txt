@@ -27,5 +27,28 @@ public class Prueba_Java {
 		System.out.println(copiaNombres.toString());
 		Collections.sort(copiaNombres, Collections.reverseOrder());
 		System.out.println(copiaNombres.toString());
+
+		System.out.println("\n=========================================");
+		class Alumno implements Comparable<Alumno>{
+			String numControl;
+			Integer edad;
+			public Alumno(String numControl, int edad) {
+				this.numControl = numControl;
+				this.edad = edad;
+			}
+			@Override
+			public String toString() {
+				return "Alumno [numControl=" + numControl + ", edad=" + edad + ", getClass()=" + getClass()
+						+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+			}
+			/*@Override
+			public int compareTo(Alumno arg0) {
+				return numControl.compareTo(arg0.numControl);
+			}*/
+			public int compareTo(Alumno arg0) {
+				return edad.compareTo(arg0.edad);
+			}
+		}//class Alumno
+		
 	}
 }
