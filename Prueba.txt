@@ -22,5 +22,10 @@ public class Prueba_Java {
 		System.out.println(nombres.toString());
 		Collections.sort(nombres);
 		System.out.println(nombres.toString());
+
+		System.out.println("\n---------- Ordenamiento en Orden Inverso");
+		System.out.println(copiaNombres.toString());
+		Collections.sort(copiaNombres, Collections.reverseOrder());
+		System.out.println(copiaNombres.toString());
 	}
 }
