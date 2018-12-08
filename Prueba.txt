@@ -8,5 +8,8 @@ public class Prueba_Java {
 		numeros.add(32);
 		numeros.add(-1);
 
+		System.out.println(numeros.toString());
+		Collections.sort(numeros);		//MergeSort
+		System.out.println(numeros.toString());
 	}
 }
